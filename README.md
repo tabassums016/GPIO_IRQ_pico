@@ -1,1 +1,1 @@
-# FreeRTOS_using_pico
+# GPIO_IRQ_pico
