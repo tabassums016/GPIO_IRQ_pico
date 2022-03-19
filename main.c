@@ -68,15 +68,15 @@ void gpio_callback(uint gpio, uint32_t events)
     gpio_set_irq_enabled(gpio, GPIO_IRQ_EDGE_RISE|GPIO_IRQ_EDGE_FALL, false);
 //   if (interrupt_time - last_interrupt_time > 150) 
 //   {
-     printf("\n % ld ",interrupt_time );
-    for (int i=0; i<600; i++)
-    {
-        for (int j=0; j<3275; j++)
-        {}
-    }
-    // interrupt_time = get_absolute_time();
-    interrupt_time = to_us_since_boot(get_absolute_time());
-    printf("\n % ld ",interrupt_time );
+    //  printf("\n % ld ",interrupt_time );
+    // for (int i=0; i<600; i++)
+    // {
+    //     for (int j=0; j<3275; j++)
+    //     {}
+    // }
+    // // interrupt_time = get_absolute_time();
+    // interrupt_time = to_us_since_boot(get_absolute_time());
+    // printf("\n % ld ",interrupt_time );
     // sleep_ms(300);
 
     while (interrupt_time - last_interrupt_time <1000)
